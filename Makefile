@@ -6,7 +6,7 @@
 #    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/05/25 15:56:38 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/05/25 18:44:41 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,10 @@ SRCS = ft_strlen.c		\
 	   ft_isdigit.c		\
 	   ft_isalnum.c		\
 	   ft_isascii.c		\
+	   ft_isprint.c		\
+	   ft_toupper.c		\
+	   ft_tolower.c		\
+	   ft_strncmp.c		\
 
 OBJS = ${SRCS:.c=.o}
 

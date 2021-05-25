@@ -37,6 +37,31 @@ int	main(void)
 	printf("ma fonction : %d // la vraie fonction : %d\n", ft_isascii(c), isascii(c));
 	printf("_____________________________________________________\n");
 
+	c = '~' ;
+	printf("_____________________________________________________\n");
+	printf("ft_isprint\n");
+	printf("ma fonction : %d // la vraie fonction : %d\n", ft_isprint(c), isprint(c));
+	printf("_____________________________________________________\n");
+
+	c = 'h' ;
+	printf("_____________________________________________________\n");
+	printf("ft_toupper\n");
+	printf("ma fonction : %c // la vraie fonction : %c\n", ft_toupper(c), toupper(c));
+	printf("_____________________________________________________\n");
+
+	c = 'A' ;
+	printf("_____________________________________________________\n");
+	printf("ft_tolower\n");
+	printf("ma fonction : %c // la vraie fonction : %c\n", ft_tolower(c), tolower(c));
+	printf("_____________________________________________________\n");
+
+	size_t n;
+	n = 4;
+	printf("_____________________________________________________\n");
+	printf("ft_strncmp\n");
+	printf("ma fonction : %d // la vraie fonction : %d\n", ft_strncmp("Hel", "Hello", n), strncmp("Hel", "Hello", n));
+	printf("_____________________________________________________\n");
+
 
 
 	return (0);
