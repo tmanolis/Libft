@@ -31,6 +31,12 @@ int	main(void)
 	printf("ma fonction : %d // la vraie fonction : %d\n", ft_isalnum(c), isalnum(c));
 	printf("_____________________________________________________\n");
 
+	c = 130;
+	printf("_____________________________________________________\n");
+	printf("ft_isascii\n");
+	printf("ma fonction : %d // la vraie fonction : %d\n", ft_isascii(c), isascii(c));
+	printf("_____________________________________________________\n");
+
 
 
 	return (0);
