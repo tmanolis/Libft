@@ -6,12 +6,12 @@
 #    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/05/24 17:34:14 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/05/25 13:23:22 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_isalpha.c	\
-	   ft_strlen.c	\
+SRCS = ft_strlen.c	\
+	   ft_isalpha.c	\
 
 OBJS = ${SRCS:.c=.o}
 
@@ -32,12 +32,21 @@ ${NAME}:	${OBJS}
 
 all:		${NAME}
 
+test:		all
+			${CC} ${CFLAGS} main.c -L. -lft
+
 clean:
 			${RM} ${OBJS}
 
 fclean:		clean
 			${RM} ${NAME}
 
+tclean:		fclean
+			${RM} a.out
+
 re:			fclean all
 
-.PHONY:		all clean fclean re
+retest:		tclean test
+
+
+.PHONY:		all clean fclean re test
