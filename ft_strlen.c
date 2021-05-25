@@ -6,13 +6,14 @@
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 18:08:07 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/25 11:37:26 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/05/25 15:20:49 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
 	int i;
 

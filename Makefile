@@ -6,12 +6,14 @@
 #    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/05/25 13:23:22 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/05/25 14:54:33 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_strlen.c	\
-	   ft_isalpha.c	\
+SRCS = ft_strlen.c		\
+	   ft_isalpha.c		\
+	   ft_isdigit.c		\
+	   ft_isalnum.c		\
 
 OBJS = ${SRCS:.c=.o}
 
@@ -34,6 +36,7 @@ all:		${NAME}
 
 test:		all
 			${CC} ${CFLAGS} main.c -L. -lft
+			./a.out
 
 clean:
 			${RM} ${OBJS}
@@ -47,6 +50,5 @@ tclean:		fclean
 re:			fclean all
 
 retest:		tclean test
-
 
 .PHONY:		all clean fclean re test

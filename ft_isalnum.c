@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/24 15:54:08 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/25 15:21:13 by tmanolis         ###   ########.fr       */
+/*   Created: 2021/05/25 14:33:53 by tmanolis          #+#    #+#             */
+/*   Updated: 2021/05/25 14:55:33 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-#ifndef __LIBFT_H__
-#define __LIBFT_H__
-
-size_t	ft_strlen(char *str);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-
-#endif
+int	ft_isalnum(int c)
+{
+	if (!(ft_isalpha(c) || ft_isdigit(c)))
+		return (0);
+	else
+		return (1);
+}
