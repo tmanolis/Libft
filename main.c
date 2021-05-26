@@ -1,18 +1,22 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 #include "libft.h"
 
 int	main(void)
 {
-	char *str = "coucou";
-	
+	char *str;
+	int c;
+	size_t n;
+
+
+	str = "coucou";
 	printf("_____________________________________________________\n");
 	printf("ft_strlen\n");
 	printf("ma fonction : %lu // la vraie fonction : %lu\n", ft_strlen(str), strlen(str));
 	printf("_____________________________________________________\n");
 
-	int c;
 	c = '!';
 	printf("_____________________________________________________\n");
 	printf("ft_isalpha\n");
@@ -55,14 +59,33 @@ int	main(void)
 	printf("ma fonction : %c // la vraie fonction : %c\n", ft_tolower(c), tolower(c));
 	printf("_____________________________________________________\n");
 
-	size_t n;
 	n = 4;
 	printf("_____________________________________________________\n");
 	printf("ft_strncmp\n");
 	printf("ma fonction : %d // la vraie fonction : %d\n", ft_strncmp("Hel", "Hello", n), strncmp("Hel", "Hello", n));
 	printf("_____________________________________________________\n");
 
+	str =  " -12354";
+	printf("_____________________________________________________\n");
+	printf("ft_atoi\n");
+	printf("ma fonction : %d // la vraie fonction : %d\n", ft_atoi(str), atoi(str));
+	printf("_____________________________________________________\n");
 
+	char dst[] = "Hello";
+	const char src[] = "Hey";
+	n = 3;
+	printf("_____________________________________________________\n");
+	printf("ft_strlcpy\n");
+	printf("ma fonction : %lu\ndst : %s\n", ft_strlcpy(dst, src, n), dst);
+	char dst1[] = "Hello";
+	printf("la vraie fonction : %lu\ndst : %s\n", strlcpy(dst1, src, n), dst1);
+	printf("_____________________________________________________\n");
+
+	n = 50;
+	printf("_____________________________________________________\n");
+	printf("ft_strnstr\n");
+	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strnstr("Foo Bar Baz", "Bar", n), strnstr("Foo Bar Baz", "Bar", n));
+	printf("_____________________________________________________\n");
 
 	return (0);
 }
