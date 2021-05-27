@@ -59,12 +59,18 @@ int	main(void)
 	printf("ma fonction : %c // la vraie fonction : %c\n", ft_tolower(c), tolower(c));
 	printf("_____________________________________________________\n");
 
-	c = 'O' ;
+	c = 'm' ;
 	printf("_____________________________________________________\n");
 	printf("ft_strchr\n");
 	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strchr("pomme", c), strchr("pomme", c));
 	printf("_____________________________________________________\n");
 
+	c = 'm' ;
+	printf("_____________________________________________________\n");
+	printf("ft_strrchr\n");
+	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strrchr("pomme", c), strrchr("pomme", c));
+	printf("_____________________________________________________\n");
+	
 	n = 4;
 	printf("_____________________________________________________\n");
 	printf("ft_strncmp\n");
