@@ -77,6 +77,7 @@ int	main(void)
 	printf("_____________________________________________________\n");
 	printf("ft_strlcpy\n");
 	printf("ma fonction : %lu\ndst : %s\n", ft_strlcpy(dst, src, n), dst);
+	
 	char dst1[] = "Hello";
 	printf("la vraie fonction : %lu\ndst : %s\n", strlcpy(dst1, src, n), dst1);
 	printf("_____________________________________________________\n");
@@ -86,6 +87,22 @@ int	main(void)
 	printf("ft_strnstr\n");
 	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strnstr("Foo Bar Baz", "Bar", n), strnstr("Foo Bar Baz", "Bar", n));
 	printf("_____________________________________________________\n");
+
+	char dst2[30] = "Toi";
+	const char src2[] = "Hello";
+
+	char dst3[30] = "Toi";
+	const char src3[] = "Hello";
+	size_t size;
+
+	size = ;
+	printf("_____________________________________________________\n");
+	printf("ft_strlcat\n");
+	printf("dst : %s\nsrc : %s\n", dst2, src2);
+	printf("ma fonction : %lu / dst : %s\n", ft_strlcat(dst2, src2, size), dst2);
+	printf("la vraie fonction : %lu / dst : %s\n", strlcat(dst3, src3, size), dst3);
+	printf("_____________________________________________________\n");
+
 
 	return (0);
 }
