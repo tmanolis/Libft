@@ -6,7 +6,7 @@
 #    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/05/27 12:41:21 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/05/27 17:38:40 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRCS = ft_strlen.c		\
 	   ft_isprint.c		\
 	   ft_toupper.c		\
 	   ft_tolower.c		\
+	   ft_strchr.c		\
 	   ft_strncmp.c		\
 	   ft_strlcpy.c		\
 	   ft_strlcat.c		\
