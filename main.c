@@ -65,12 +65,6 @@ int	main(void)
 	printf("ma fonction : %d // la vraie fonction : %d\n", ft_strncmp("Hel", "Hello", n), strncmp("Hel", "Hello", n));
 	printf("_____________________________________________________\n");
 
-	str =  " -12354";
-	printf("_____________________________________________________\n");
-	printf("ft_atoi\n");
-	printf("ma fonction : %d // la vraie fonction : %d\n", ft_atoi(str), atoi(str));
-	printf("_____________________________________________________\n");
-
 	char dst[] = "Hello";
 	const char src[] = "Hey";
 	n = 3;
@@ -82,20 +76,12 @@ int	main(void)
 	printf("la vraie fonction : %lu\ndst : %s\n", strlcpy(dst1, src, n), dst1);
 	printf("_____________________________________________________\n");
 
-	n = 50;
-	printf("_____________________________________________________\n");
-	printf("ft_strnstr\n");
-	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strnstr("Foo Bar Baz", "Bar", n), strnstr("Foo Bar Baz", "Bar", n));
-	printf("_____________________________________________________\n");
-
 	char dst2[30] = "Toi";
 	const char src2[] = "Hello";
-
 	char dst3[30] = "Toi";
 	const char src3[] = "Hello";
 	size_t size;
-
-	size = ;
+	size = 1;
 	printf("_____________________________________________________\n");
 	printf("ft_strlcat\n");
 	printf("dst : %s\nsrc : %s\n", dst2, src2);
@@ -103,6 +89,16 @@ int	main(void)
 	printf("la vraie fonction : %lu / dst : %s\n", strlcat(dst3, src3, size), dst3);
 	printf("_____________________________________________________\n");
 
+	n = 50;
+	printf("_____________________________________________________\n");
+	printf("ft_strnstr\n");
+	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strnstr("Foo Bar Baz", "Bar", n), strnstr("Foo Bar Baz", "Bar", n));
+	printf("_____________________________________________________\n");
 
+	str =  " -12354";
+	printf("_____________________________________________________\n");
+	printf("ft_atoi\n");
+	printf("ma fonction : %d // la vraie fonction : %d\n", ft_atoi(str), atoi(str));
+	printf("_____________________________________________________\n");
 	return (0);
 }
