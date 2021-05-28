@@ -6,11 +6,12 @@
 #    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/05/27 19:02:38 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/05/28 11:36:20 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_strlen.c		\
+SRCS = ft_memset.c		\
+	   ft_strlen.c		\
 	   ft_isalpha.c		\
 	   ft_isdigit.c		\
 	   ft_isalnum.c		\

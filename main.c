@@ -9,7 +9,13 @@ int	main(void)
 	char *str;
 	int c;
 	size_t n;
+	char str1[50] = "Coucou les amis" ;
+	size_t	test;
 
+	test = 10;
+	printf("_____________________________________________________\n");
+	printf("ft_memset\n");
+	printf("ma fonction : %s // la vraie fonction : %s\n", ft_memset(str1,'U', 5), memset((void *)&test, 'U', 5));
 
 	str = "coucou";
 	printf("_____________________________________________________\n");

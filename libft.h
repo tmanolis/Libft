@@ -6,15 +6,16 @@
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:54:08 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/27 19:02:58 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/05/28 12:02:46 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stddef.h>
 
 #ifndef __LIBFT_H__
 #define __LIBFT_H__
 
+#include <stddef.h>
+
+void	*ft_memset(void *b, int c, size_t len);
 size_t	ft_strlen(const char *str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
