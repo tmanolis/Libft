@@ -9,14 +9,22 @@ int	main(void)
 	char *str;
 	int c;
 	size_t n;
-	char str1[50] = "Coucou les amis" ;
 	size_t	test;
 
+	char str1[50] = "Coucou les amis" ;
 	test = 10;
 	printf("_____________________________________________________\n");
 	printf("ft_memset\n");
 	printf("ma fonction : %s // la vraie fonction : %s\n", ft_memset(str1,'U', 5), memset((void *)&test, 'U', 5));
 
+	char str2[50] = "Coucou les amis" ;
+	char str3[50] = "Coucou les amis" ;
+	printf("_____________________________________________________\n");
+	printf("ft_bzero\n");
+	ft_bzero(str2, 15);
+	bzero(str3, 15);
+	printf("ma fonction : %s // la vraie fonction : %s\n", str2, str3);
+	
 	str = "coucou";
 	printf("_____________________________________________________\n");
 	printf("ft_strlen\n");
