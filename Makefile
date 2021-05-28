@@ -6,7 +6,7 @@
 #    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/05/28 11:36:20 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/05/28 14:18:16 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRCS = ft_memset.c		\
 	   ft_strlcat.c		\
 	   ft_strnstr.c		\
 	   ft_atoi.c		\
+	   ft_strdup.c		\
 
 OBJS = ${SRCS:.c=.o}
 

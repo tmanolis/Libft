@@ -118,5 +118,13 @@ int	main(void)
 	printf("ft_atoi\n");
 	printf("ma fonction : %d // la vraie fonction : %d\n", ft_atoi(str), atoi(str));
 	printf("_____________________________________________________\n");
+
+	str =  "Salut les nazes";
+	printf("_____________________________________________________\n");
+	printf("ft_strdup\n");
+	printf("%s\n", str);
+	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strdup(str), strdup(str));
+	printf("_____________________________________________________\n");
+
 	return (0);
 }
