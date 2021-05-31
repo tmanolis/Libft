@@ -16,6 +16,7 @@ int	main(void)
 	printf("_____________________________________________________\n");
 	printf("ft_memset\n");
 	printf("ma fonction : %s // la vraie fonction : %s\n", ft_memset(str1,'U', 5), memset((void *)&test, 'U', 5));
+	printf("_____________________________________________________\n");
 
 	char str2[50] = "Coucou les amis" ;
 	char str3[50] = "Coucou les amis" ;
@@ -24,7 +25,41 @@ int	main(void)
 	ft_bzero(str2, 15);
 	bzero(str3, 15);
 	printf("ma fonction : %s // la vraie fonction : %s\n", str2, str3);
+	printf("_____________________________________________________\n");
 	
+	char src4[50] = "Hola" ;
+	char dst4[50] = "Coucou les amis" ;
+	char dst5[50] = "Coucou les amis" ;
+	printf("_____________________________________________________\n");
+	printf("ft_memcpy\n");
+	ft_memcpy(dst4, src4, 0);
+	memcpy(dst5, src4, 0);
+	printf("ma fonction : %s // la vraie fonction : %s\n", dst4, dst5);
+	printf("_____________________________________________________\n");
+	
+	c = 'l';
+	char dst6[50] = "Coucou les amis" ;
+	char dst7[50] = "Coucou les amis" ;
+	printf("_____________________________________________________\n");
+	printf("ft_memccpy\n");
+	printf("ma fonction : %p // la vraie fonction : %p\n", ft_memccpy(dst6, src4, c, 15), memccpy(dst7, src4, c, 15));
+	printf("ma fonction : %s // la vraie fonction : %s\n", dst6, dst7);
+	printf("_____________________________________________________\n");
+
+	c = 'l';
+	printf("_____________________________________________________\n");
+	printf("ft_memchr\n");
+	printf("str : %s // occurence : %c\n", src4, c);
+	printf("ma fonction : %p // la vraie fonction : %p\n", ft_memchr(src4, c, 4), memchr(src4, c, 4));
+	printf("_____________________________________________________\n");
+
+	char dst8[50] = "Coucou les amis" ;
+	char dst9[50] = "Coucou les amus" ;
+	printf("_____________________________________________________\n");
+	printf("ft_memcmp\n");
+	printf("ma fonction : %d // la vraie fonction : %d\n", ft_memcmp(dst8, dst9, 15), memcmp(dst8, dst9, 15));
+	printf("_____________________________________________________\n");
+
 	str = "coucou";
 	printf("_____________________________________________________\n");
 	printf("ft_strlen\n");

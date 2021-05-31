@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/28 15:13:09 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/31 15:03:46 by tmanolis         ###   ########.fr       */
+/*   Created: 2021/05/31 15:04:10 by tmanolis          #+#    #+#             */
+/*   Updated: 2021/05/31 17:26:36 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t	i;
-	unsigned char	*dst_cast;
-	unsigned char	*src_cast;
+	size_t			i;
+	unsigned char	occurence;
+	unsigned char	*dest;
+	unsigned char	*source;
 
 	i = 0;
-	dst_cast = (unsigned char *)dst;
-	src_cast = (unsigned char *)src;
-
+	occurence = (unsigned char)c;
+	dest = (unsigned char	*)dst;
+	source = (unsigned char	*)src;
 	while (i < n)
 	{
-		*dst_cast = *src_cast;
-		dst_cast++;
-		src_cast++;
+		dest[i] = source[i];
+		if (source[i] == occurence)
+			return (dst + i + 1);
 		i++;
 	}
-	return (dst);
+	return (NULL);
 }
