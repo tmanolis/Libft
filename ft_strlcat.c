@@ -6,7 +6,7 @@
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 12:39:50 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/27 17:34:57 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/02 12:32:36 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = ft_strlen(dst);
 	j = 0;
 	cache = ft_strlen(dst) + ft_strlen(src);
-	if (dstsize <= ft_strlen(dst + 1))
+	if (dstsize == 0 || i >= dstsize)
 		return (dstsize + ft_strlen(src));
-	while (src[j] != '\0' && (i + j) < dstsize - 1)
+	while (src[j] != '\0' && i < dstsize - 1)
 	{
 		dst[i] = src[j];
 		i++;
