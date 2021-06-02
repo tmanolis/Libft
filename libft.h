@@ -6,7 +6,7 @@
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:54:08 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/31 17:38:44 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/02 15:12:50 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *str);
 char	*ft_strdup(const char *s1);
+char *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
