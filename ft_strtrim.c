@@ -6,7 +6,7 @@
 /*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:35:51 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/03 16:42:42 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/03 17:43:15 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ char *ft_strtrim(char const *s1, char const *set)
 
 	start = ft_start(s1, set);
 	end = ft_end(s1, set);
-	i = 0;
 	s1_trim = (char	*)malloc(sizeof(char) * (end - start) + 2);
 	if (!s1_trim)
 		return (NULL);
+	i = 0;
 	while (start <= end)
 	{
 		s1_trim[i] = s1[start];
