@@ -169,5 +169,7 @@ int	main(void)
 	printf("ma fonction : %s // la vraie fonction : %s\n", ft_strdup(str), strdup(str));
 	printf("_____________________________________________________\n");
 
+	
+	
 	return (0);
 }
