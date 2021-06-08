@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/03 17:07:10 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/06/08 16:44:30 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,10 @@ SRCS = ft_memset.c		\
 	   ft_strjoin.c		\
 	   ft_strtrim.c		\
 	   ft_strmapi.c		\
+	   ft_putchar_fd.c	\
+	   ft_putstr_fd.c	\
+	   ft_putendl_fd.c	\
+	   ft_putnbr_fd.c	\
 
 OBJS = ${SRCS:.c=.o}
 

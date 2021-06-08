@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:54:08 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/03 17:07:36 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/08 16:45:09 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define __LIBFT_H__
 
 #include <stddef.h>
+#include <unistd.h>
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -39,9 +40,14 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_atoi(const char *str);
 char	*ft_strdup(const char *s1);
-char *ft_substr(char const *s, unsigned int start, size_t len);
-char *ft_strjoin(char const *s1, char const *s2);
-char *ft_strtrim(char const *s1, char const *set);
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char    *ft_substr(char const *s, unsigned int start, size_t len);
+char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strtrim(char const *s1, char const *set);
+char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void    ft_putchar_fd(char c, int fd);
+void    ft_putstr_fd(char *s, int fd);
+void    ft_putendl_fd(char *s, int fd);
+void    ft_putnbr_fd(int n, int fd);
+
 
 #endif
