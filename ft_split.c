@@ -6,7 +6,7 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 12:05:05 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/09 18:44:51 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/10 12:06:31 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,30 +52,20 @@ static char *wordcopy(char const *s, char c)
     return (line);
 }
 
-// static int freeline(char *)
-
-char **ft_split(char const *s, char c)
+char **do_the_split(char ** split, char const *s, char c)
 {
-    char        **split;
     int         i;
 
-    split = (char **)malloc(sizeof(char *) * (wordcount(s, c) + 1));
-    if (!split)
-        return (NULL);
-    
     i = 0;
     while (*s)
     {
         while (*s == c)
-        {
             s++;
-        }
         if (*s != c && *s != '\0')
         {
             split[i] = wordcopy(s, c);
             if (!split[i])
             {
-                // split[i] = freeline();
                 return (NULL);
             }
             i++;
@@ -88,23 +78,15 @@ char **ft_split(char const *s, char c)
     return (split);
 }
 
-int main(void)
+char **ft_split(char const *s, char c)
 {
-    char	**splited;
-	char	**dent;
-    char	s[] = "Coucou  toi mon       ami";
+    char        **split;
 
-    splited = ft_split(s, ' ');
-	if (splited)
-	{
-		dent = splited;
-		while (*splited)
-		{
-			printf("%s\n", *splited);
-			free(*splited++);
-		}
-		printf("%s\n", *splited);
-		free(dent);
-	}
-	return (0);
+    if (s == NULL)
+        return (NULL);
+    split = (char **)malloc(sizeof(char *) * (wordcount(s, c) + 1));
+    if (!split)
+        return (NULL);
+    split = do_the_split(split, s, c);
+    return (split);
 }
