@@ -6,12 +6,12 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 12:05:05 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/10 12:06:31 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/22 14:46:06 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdio.h>
+#include "libft.h"
 
 static int wordcount(char const *s, char c)
 {
@@ -20,6 +20,10 @@ static int wordcount(char const *s, char c)
 
     i = 0;
     count = 0;
+    if (ft_strchr(s, c) == 0)
+    {
+        return (count + 1);
+    }
     while (s[i] != '\0')
     {
         if (s[i] != c && ((s[i + 1] == c || s[i + 1] == '\0')))
@@ -32,18 +36,19 @@ static int wordcount(char const *s, char c)
 static char *wordcopy(char const *s, char c)
 {
     int         i;
+    int         letter;
     char        *line;
 
-    i = 0;
-    while (s[i] != c)
+    letter = 0;
+    while (s[letter] != c && s[letter] != '\0')
     {
-        i++;   
+        letter++;   
     }
-    line = (char *)malloc(sizeof(char) * (i + 1));
+    line = (char *)malloc(sizeof(char) * (letter + 1));
     if (!line)
         return (NULL);
     i = 0;
-    while (s[i] != c)
+    while (i < letter)
     {
         line[i] = s[i];
         i++;

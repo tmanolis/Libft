@@ -6,7 +6,7 @@
 #    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/24 14:54:58 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/09 12:04:56 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/06/22 13:31:38 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 .c.o:
 			${CC} ${FLAGS} -c $< -o ${<:.c=.o}
-
+			
 ${NAME}:	${OBJS}
 			${LINK} ${NAME} ${OBJS}
 
