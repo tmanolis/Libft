@@ -6,7 +6,7 @@
 #    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/22 17:49:56 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/25 14:20:18 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/06/25 15:14:43 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,8 @@ SRCS = ft_memset.c  \
 	ft_putendl_fd.c	\
 	ft_putnbr_fd.c	\
 
-BONUS = ft_lstnew.c	\
+BONUS = ft_lstnew.c			\
+		ft_lstadd_front.c	\
 		
 
 OBJS = ${SRCS:.c=.o}

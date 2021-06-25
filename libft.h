@@ -6,7 +6,7 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:54:08 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/25 14:24:50 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/25 15:15:09 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void    ft_putstr_fd(char *s, int fd);
 void    ft_putendl_fd(char *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
 t_list *ft_lstnew(void *content);
+void    ft_lstadd_front(t_list **alst, t_list *new);
 
 
 #endif
