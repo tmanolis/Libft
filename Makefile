@@ -6,7 +6,7 @@
 #    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/22 17:49:56 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/22 17:50:01 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/06/25 14:20:18 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,12 @@ SRCS = ft_memset.c  \
 	ft_putendl_fd.c	\
 	ft_putnbr_fd.c	\
 
+BONUS = ft_lstnew.c	\
+		
+
 OBJS = ${SRCS:.c=.o}
+
+OBJS_BONUS = ${BONUS:.c=.o}
 
 NAME = libft.a
 
@@ -64,6 +69,9 @@ ${NAME}:	${OBJS}
 
 all:		${NAME}
 
+bonus:		${OBJS} ${OBJS_BONUS}
+			${LINK} ${NAME} ${OBJS} ${OBJS_BONUS}
+
 test:		all
 			${CC} ${CFLAGS} main.c -L. -lft
 			./a.out
@@ -81,4 +89,4 @@ re:			fclean all
 
 retest:		tclean test
 
-.PHONY:		all clean fclean re test
+.PHONY:		all clean fclean re test bonus
