@@ -6,7 +6,7 @@
 #    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/22 17:49:56 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/25 15:54:54 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/06/25 16:14:53 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ SRCS = ft_memset.c  \
 BONUS = ft_lstnew.c			\
 		ft_lstadd_front.c	\
 		ft_lstsize.c		\
+		ft_lstlast.c		\
 		
 
 OBJS = ${SRCS:.c=.o}
@@ -79,10 +80,10 @@ test:		all
 			./a.out
 
 clean:
-			${RM} ${OBJS}
+			${RM} ${OBJS} ${OBJS_BONUS}
 
 fclean:		clean
-			${RM} ${NAME}
+			${RM} ${NAME} 
 
 tclean:		fclean
 			${RM} a.out
