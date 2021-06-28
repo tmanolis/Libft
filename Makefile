@@ -6,7 +6,7 @@
 #    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/22 17:49:56 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/28 11:42:10 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/06/28 15:45:33 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,8 +51,8 @@ BONUS = ft_lstnew.c			\
 		ft_lstlast.c		\
 		ft_lstadd_back.c	\
 		ft_lstdelone.c		\
-		ft_lstclear.c			\
-		ft_lstiter.c			\
+		ft_lstclear.c		\
+		ft_lstiter.c		\
 		
 
 OBJS = ${SRCS:.c=.o}
