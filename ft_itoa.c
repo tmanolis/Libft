@@ -6,7 +6,7 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:29:56 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/21 18:00:26 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 14:31:50 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	count_unit(int n)
 	return (count);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int 		i;
+	int			i;
 	int			count;
 	long int	nb;
 	char		*str;

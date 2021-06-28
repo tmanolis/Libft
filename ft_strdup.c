@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 14:16:37 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/28 14:40:23 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 15:12:16 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,5 @@ char	*ft_strdup(const char *s1)
 	if (!dst)
 		return (NULL);
 	ft_strlcpy(dst, s1, len + 1);
-	return (dst);	
-	
+	return (dst);
 }

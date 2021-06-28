@@ -6,7 +6,7 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/27 19:01:10 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/21 15:09:06 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 15:22:58 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
-	
+
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
@@ -23,5 +23,5 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)s + i);
 		i--;
 	}
-		return (0);
+	return (0);
 }

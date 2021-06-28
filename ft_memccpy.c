@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 15:04:10 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/31 17:26:36 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 14:40:41 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 
 	i = 0;
 	occurence = (unsigned char)c;
-	dest = (unsigned char	*)dst;
-	source = (unsigned char	*)src;
+	dest = (unsigned char *)dst;
+	source = (unsigned char *)src;
 	while (i < n)
 	{
 		dest[i] = source[i];

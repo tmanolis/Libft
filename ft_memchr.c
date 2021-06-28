@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 15:52:30 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/31 17:36:43 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 14:42:01 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	occurence = (unsigned char)c;
-	str = (unsigned char	*)s;
+	str = (unsigned char *)s;
 	while (i < n)
 	{
 		if (str[i] == occurence)
-			return ((void	*)s + i);
+			return ((void *)s + i);
 		i++;
 	}
 	return (NULL);

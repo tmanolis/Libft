@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmanolis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 16:21:21 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/05/25 17:40:12 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 15:26:10 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@ int	ft_toupper(int c)
 	if (c > 96 && c < 123)
 		return (c - 32);
 	else
-		return (c);	
+		return (c);
 }

@@ -6,19 +6,19 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 16:06:16 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/08 16:15:51 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 15:05:46 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    if (s)
-    {
-    size_t  len;
+	size_t	len;
 
-    len = ft_strlen(s);
-    write(fd, s, len);
-    }
+	if (s)
+	{
+		len = ft_strlen(s);
+		write(fd, s, len);
+	}
 }
