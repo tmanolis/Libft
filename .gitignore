@@ -54,3 +54,4 @@ dkms.conf
 # Directories
 libftTester
 libft-war-machine
+libftdestructor

@@ -6,7 +6,7 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 17:05:06 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/28 16:21:36 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 16:54:03 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*new_str;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	new_str = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!new_str)
