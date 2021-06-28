@@ -6,11 +6,10 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 18:08:07 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/28 15:19:47 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 16:21:31 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)

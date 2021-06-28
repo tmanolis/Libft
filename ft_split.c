@@ -6,11 +6,10 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 12:05:05 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/28 15:11:03 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 16:20:26 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 static int	wordcount(char const *s, char c)
