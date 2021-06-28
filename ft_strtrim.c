@@ -6,7 +6,7 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:35:51 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/21 18:59:31 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/28 13:19:49 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ char *ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 	char 	*s1_trim;
 
+	if (!set || !s1)
+		return (NULL);
 	start = ft_start(s1, set);
 	end = ft_end(s1, set);
 	if (ft_strlen(s1) == 0 || (start == ft_strlen(s1) && end == 0))
