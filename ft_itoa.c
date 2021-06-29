@@ -6,13 +6,13 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:29:56 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/28 14:31:50 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/29 15:12:07 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"	
 
-int	count_unit(int n)
+static int	count_unit(int n)
 {
 	int	count;
 

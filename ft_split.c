@@ -6,11 +6,21 @@
 /*   By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 12:05:05 by tmanolis          #+#    #+#             */
-/*   Updated: 2021/06/28 16:20:26 by tmanolis         ###   ########.fr       */
+/*   Updated: 2021/06/29 15:08:12 by tmanolis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	free_while_you_can(char **split, int i)
+{
+	while (i >= 0)
+	{
+		free(split[i]);
+		i--;
+	}
+	free(split);
+}
 
 static int	wordcount(char const *s, char c)
 {
@@ -56,7 +66,7 @@ static char	*wordcopy(char const *s, char c)
 	return (line);
 }
 
-char	**do_the_split(char **split, char const *s, char c)
+static char	**do_the_split(char **split, char const *s, char c)
 {
 	int	i;
 
@@ -70,6 +80,7 @@ char	**do_the_split(char **split, char const *s, char c)
 			split[i] = wordcopy(s, c);
 			if (!split[i])
 			{
+				free_while_you_can(split, i);
 				return (NULL);
 			}
 			i++;
