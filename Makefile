@@ -6,7 +6,7 @@
 #    By: tmanolis <tmanolis@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/22 17:49:56 by tmanolis          #+#    #+#              #
-#    Updated: 2021/06/28 17:12:47 by tmanolis         ###   ########.fr        #
+#    Updated: 2021/10/05 14:35:03 by tmanolis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,23 +78,15 @@ ${NAME}:	${OBJS}
 all:		${NAME}
 
 bonus:		${OBJS} ${OBJS_BONUS}
+			touch bonus
 			${LINK} ${NAME} ${OBJS} ${OBJS_BONUS}
 
-test:		all
-			${CC} ${CFLAGS} main.c -L. -lft
-			./a.out
-
 clean:
-			${RM} ${OBJS} ${OBJS_BONUS}
+			${RM} ${OBJS} ${OBJS_BONUS} bonus
 
 fclean:		clean
 			${RM} ${NAME} 
 
-tclean:		fclean
-			${RM} a.out
-
 re:			fclean all
 
-retest:		tclean test
-
-.PHONY:		all clean fclean re test bonus
+.PHONY:		all clean fclean re
